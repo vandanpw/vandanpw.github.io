@@ -5,14 +5,13 @@ body, ul, li, a {
     text-decoration: none;
     list-style: none;
     font-family: Arial, sans-serif;
-
 }
 
 /* Header styling */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Keeps logo on left, nav centered, button on right */
+    justify-content: space-between;
     background-color: black;
     padding: 15px 30px;
     position: relative;
@@ -27,7 +26,7 @@ header {
 nav {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Centers nav */
+    transform: translateX(-50%); /* Centers navigation */
 }
 
 /* Navigation links */
@@ -37,20 +36,23 @@ nav ul {
 }
 
 nav ul li a {
-    color: rgb(235, 229, 234);
+    color: white;
     font-size: 24px;
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
 
-/* Hover effect - underlines the text */
+/* Hover effect */
 nav ul li a:hover {
     text-decoration: underline;
-    color: deepskyblue; 
-    background-color: transparent;
+    color: deepskyblue;
 }
 
 /* Get a Quote Button */
+.quote-button {
+    margin-left: auto; /* Pushes button to the right */
+}
+
 .quote-button a {
     background-color: lightblue;
     color: black;
@@ -62,7 +64,91 @@ nav ul li a:hover {
 }
 
 .quote-button a:hover {
-    background-color: deepskyblue; /* Darker blue on hover */
+    background-color: deepskyblue;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* Mobile menu - Hidden by default */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 220px;
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show menu when hovered */
+.hamburger:hover + .mobile-menu,
+.mobile-menu:hover {
+    display: block;
+    opacity: 0.85;
+    transform: translateY(0);
+}
+
+/* Mobile menu items */
+.mobile-menu ul {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.mobile-menu ul li a:hover {
+    background-color: deepskyblue;
+    border-radius: 5px;
+}
+
+/* Mobile button inside menu */
+.mobile-menu .quote-button {
+    margin-top: 10px;
+}
+
+.mobile-menu .quote-button a {
+    display: block;
+    padding: 12px 20px;
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.mobile-menu .quote-button a:hover {
+    background-color: deepskyblue;
 }
 
 /* Footer Styling */
@@ -76,19 +162,32 @@ footer {
 /* Flex container for footer sections */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Contact info on left, hours on right */
+    justify-content: space-between;
     align-items: flex-start;
 }
 
 /* Contact Info & Hours Styling */
 .contact-info, .hours {
-    width: 45%; /* Adjust width for even spacing */
+    width: 45%;
 }
 
 /* Footer Icons */
 .icon {
-    width: 20px; /* Set icon size */
+    width: 20px;
     height: 20px;
-    margin-right: 10px; /* Add spacing between icon and text */
-    vertical-align: middle; /* Align icons with text */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 812px) {
+    /* Hide nav and button on mobile */
+    nav, .quote-button {
+        display: none;
+    }
+
+    /* Show hamburger menu */
+    .hamburger {
+        display: block;
+    }
 }
