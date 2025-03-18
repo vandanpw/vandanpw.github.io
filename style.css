@@ -191,3 +191,114 @@ footer {
         display: block;
     }
 }
+
+
+
+/* Services section styling */
+.services-section {
+    background-image: url('images/pressure_washer.jpeg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Add more space between text and form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Services content styling */
+.services-content {
+    max-width: 45%; /* Slightly reduce width for more spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 20px; /* Add space between text and form */
+}
+
+.services-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.services-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+#contact-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Set form width */
+    color: white;
+    margin-left: 20px; /* Add space between text and form */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: black;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-button {
+    background-color: lightblue;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+
+.contact-button:hover {
+    background-color: deepskyblue;
+}
+
+@media screen and (max-width: 768px) {
+    .services-section {
+        flex-direction: column; /* Stack text and form vertically */
+        height: auto; /* Adjust height to fit content */
+        padding: 10px;
+    }
+
+    .services-content, #contact-form {
+        max-width: 100%; /* Full width for smaller screens */
+        width: 100%;
+        margin: 0 0 20px 0; /* Reset margins for mobile */
+    }
+
+    .services-content h2 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .services-content p {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    .contact-button {
+        font-size: 16px; /* Smaller button text for mobile */
+    }
+}
