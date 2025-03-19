@@ -10,12 +10,12 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function(){
-            emailjs.init({
+    (function(){
+        emailjs.init({
             publicKey: "A7x55ri0CWNhSUmS1",
-            });
-        })();
-</script>
+        });
+    })();
+    </script>
 </head>
 <body>
     <header>
@@ -74,7 +74,7 @@
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="contact-button">Send Message</button>
+                    <button type="submit" class="contact-button" onclick="sendMail()">Send Message</button>
                 </form>
         </div>
     </div>
