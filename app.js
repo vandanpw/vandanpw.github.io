@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.disabled = true;
 
         // Send the email using EmailJS
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form) // Replace with your Service ID and Template ID
+        emailjs.sendForm('service_igyucx9', 'service_igyucx9', form) // Replace with your Service ID and Template ID
             .then(() => {
                 alert('Thank you! Your message has been sent.');
                 form.reset(); // Clear the form
