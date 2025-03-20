@@ -196,7 +196,7 @@ footer {
 
 /* Services section styling */
 .services-section {
-    background-image: url('images/pressure_washer.JPG'); /* Add your image path here */
+    background-image: url('images/pressure_washer.jpeg'); /* Add your image path here */
     background-size: cover;
     background-position: center;
     height: 500px; /* Adjust height as needed */
