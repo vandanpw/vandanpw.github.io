@@ -1,6 +1,16 @@
 function toggleMenu() {
-    document.querySelector(".mobile-menu").classList.toggle("active");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    mobileMenu.classList.toggle("active");
 }
+
+document.addEventListener('click', function (event) {
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    if (!hamburger.contains(event.target) && !mobileMenu.contains(event.target)) {
+        mobileMenu.classList.remove("active");
+    }
+});
 
 function sendMail(){
     let params = {

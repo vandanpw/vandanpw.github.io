@@ -15,6 +15,7 @@ header {
     background-color: black;
     padding: 15px 30px;
     position: relative;
+    z-index: 100;
 }
 
 /* Logo styling */
@@ -54,7 +55,7 @@ nav ul li a:hover {
 }
 
 .quote-button a {
-    background-color: lightblue;
+    background-color: rgb(109, 210, 244);
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
@@ -93,15 +94,13 @@ nav ul li a:hover {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Show menu when hovered */
-.hamburger:hover + .mobile-menu,
-.mobile-menu:hover {
+/* Show menu when active */
+.mobile-menu.active {
     display: block;
-    opacity: 0.85;
+    opacity: 0.95;
     transform: translateY(0);
 }
 
-/* Mobile menu items */
 .mobile-menu ul {
     font-weight: bold;
     font-size: 18px;
@@ -140,7 +139,7 @@ nav ul li a:hover {
 .mobile-menu .quote-button a {
     display: block;
     padding: 12px 20px;
-    background-color: lightblue;
+    background-color: rgb(109, 210, 244);
     color: black;
     font-size: 20px;
     border-radius: 5px;
@@ -150,6 +149,7 @@ nav ul li a:hover {
 .mobile-menu .quote-button a:hover {
     background-color: deepskyblue;
 }
+
 
 /* Footer Styling */
 footer {
@@ -196,7 +196,7 @@ footer {
 
 /* Services section styling */
 .services-section {
-    background-image: url('images/pressure_washer.jpeg'); /* Add your image path here */
+    background-image: url('images/pressure_washer.jpg'); /* Add your image path here */
     background-size: cover;
     background-position: center;
     height: 500px; /* Adjust height as needed */
@@ -204,7 +204,6 @@ footer {
     align-items: center;
     justify-content: space-around; /* Add more space between text and form */
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     position: relative;
 }
@@ -212,7 +211,7 @@ footer {
 /* Services content styling */
 .services-content {
     max-width: 45%; /* Slightly reduce width for more spacing */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(1, 1, 1, 0.7); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -261,7 +260,7 @@ footer {
 }
 
 .contact-button {
-    background-color: lightblue;
+    background-color: rgb(109, 210, 244);
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
@@ -300,5 +299,77 @@ footer {
 
     .contact-button {
         font-size: 16px; /* Smaller button text for mobile */
+    }
+}
+
+.why-choose-us {
+    margin-top: 40px; 
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.why-choose-us-content {
+    display: flex;
+    align-items: center;
+    gap: 80px; /* Space between image and text */
+}
+
+.why-choose-us-content img {
+    width: 400px; /* Adjust image width */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+}
+
+.why-choose-us-text {
+    width: 50%; /* Adjust text width */
+}
+
+.why-choose-us-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Adjust color as needed */
+}
+
+.why-choose-us-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555; /* Adjust color as needed */
+}
+
+.why-choose-us-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us-text ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555; /* Adjust color as needed */
+}
+
+.why-choose-us-text ul li strong {
+    color: #000; /* Adjust color as needed */
+}
+
+/* Responsive Design for Why Choose Us Section */
+@media screen and (max-width: 768px) {
+    .why-choose-us-content {
+        flex-direction: column; /* Stack image and text vertically on mobile */
+    }
+
+    .why-choose-us-content img,
+    .why-choose-us-text {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .why-choose-us-text h2 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .why-choose-us-text p,
+    .why-choose-us-text ul li {
+        font-size: 16px; /* Smaller font size for mobile */
     }
 }
