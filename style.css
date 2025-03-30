@@ -374,3 +374,224 @@ footer {
         font-size: 16px; /* Smaller font size for mobile */
     }
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: deepskyblue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile menu dropdown (when hamburger is clicked) */
+@media screen and (max-width: 812px) {
+    .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+}
+
+.exterior_cleaning {
+    background-image: url('images/home_exterior.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Add more space between text and form */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.exterior_cleaning h2{
+    font-size: 48px;  /* Larger size */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Better contrast */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Services Description Section */
+.services-description {
+    max-width: 1000px;
+    margin: 60px auto;  /* Increased from 40px */
+    padding: 40px;      /* Increased from 20px */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid rgb(109, 210, 244);
+}
+.services-description:nth-child(even) {
+    background-color: white;
+    border-left-color: #333;
+}
+.services-description + .services-description {
+    margin-top: 80px;  /* Extra space between stacked sections */
+}
+.services-description h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.services-description h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: rgb(109, 210, 244);
+}
+.services-description h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.services-description h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: rgb(109, 210, 244);
+}
+.services-description p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.services-description a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: rgb(109, 210, 244);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.services-description a:hover {
+    background-color: white;
+    color: rgb(109, 210, 244);
+    border-color: rgb(109, 210, 244);
+    transform: translateY(-2px);
+}
+
+.cta-button {
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+    padding: 15px 25px;
+    background-color: rgb(109, 210, 244);
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: deepskyblue;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+    .services-description {
+        padding: 0 15px;
+        margin: 30px auto;
+    }
+    
+    .services-description h2 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .services-description h3 {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .services-description p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+    }
+    .services-description a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .cta-button {
+        width: 100%;
+        max-width: 250px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    .exterior_cleaning h2 {
+        font-size: 32px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-description h2 {
+        font-size: 24px;
+    }
+    
+    .services-description p {
+        font-size: 15px;
+    }
+}

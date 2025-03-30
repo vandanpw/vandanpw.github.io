@@ -1,7 +1,21 @@
 function toggleMenu() {
-    const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.toggle("active");
+    document.querySelector(".mobile-menu").classList.toggle("active");
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const dropbtn = dropdown.querySelector('.dropbtn');
+        
+        dropbtn.addEventListener('click', function(e) {
+            if (window.innerWidth <= 812) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+});
 
 document.addEventListener('click', function (event) {
     const mobileMenu = document.querySelector(".mobile-menu");
