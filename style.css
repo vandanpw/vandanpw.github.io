@@ -455,13 +455,13 @@ footer {
     max-width: 1000px;
     margin: 60px auto;  /* Increased from 40px */
     padding: 40px;      /* Increased from 20px */
-    background-color: #f9f9f9;
+    background-color: #efeded;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     border-left: 5px solid rgb(109, 210, 244);
 }
 .services-description:nth-child(even) {
-    background-color: white;
+    background-color: rgb(229, 242, 244);
     border-left-color: #333;
 }
 .services-description + .services-description {
@@ -594,4 +594,24 @@ footer {
     .services-description p {
         font-size: 15px;
     }
+}
+.house_washing {
+    background-image: url('images/house_wash.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Add more space between text and form */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.house_washing h2{
+    font-size: 48px;  /* Larger size */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Better contrast */
+    padding: 20px;
+    border-radius: 5px;
 }
