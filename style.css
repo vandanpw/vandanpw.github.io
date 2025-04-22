@@ -1,4 +1,3 @@
-/* Reset default styles */
 body, ul, li, a {
     margin: 0;
     padding: 0;
@@ -231,12 +230,12 @@ footer {
 
 /* Form styling */
 #contact-form {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 0px 20px 20px;
     border-radius: 10px;
-    width: 45%; /* Set form width */
+    width: 45%; 
     color: white;
-    margin-left: 20px; /* Add space between text and form */
+    margin-left: 20px;
 }
 
 .form-group {
@@ -251,12 +250,12 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.8); 
     color: black;
 }
 
 .form-group textarea {
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical; 
 }
 
 .contact-button {
@@ -278,27 +277,27 @@ footer {
 
 @media screen and (max-width: 768px) {
     .services-section {
-        flex-direction: column; /* Stack text and form vertically */
-        height: auto; /* Adjust height to fit content */
+        flex-direction: column; 
+        height: auto; 
         padding: 10px;
     }
 
     .services-content, #contact-form {
-        max-width: 100%; /* Full width for smaller screens */
+        max-width: 100%; 
         width: 100%;
-        margin: 0 0 20px 0; /* Reset margins for mobile */
+        margin: 0 0 20px 0; 
     }
 
     .services-content h2 {
-        font-size: 28px; /* Smaller font size for mobile */
+        font-size: 28px; 
     }
 
     .services-content p {
-        font-size: 16px; /* Smaller font size for mobile */
+        font-size: 16px;
     }
 
     .contact-button {
-        font-size: 16px; /* Smaller button text for mobile */
+        font-size: 16px;
     }
 }
 
@@ -312,31 +311,31 @@ footer {
 .why-choose-us-content {
     display: flex;
     align-items: center;
-    gap: 80px; /* Space between image and text */
+    gap: 80px;
 }
 
 .why-choose-us-content img {
     margin-top: 30px;
-    width: 400px; /* Adjust image width */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .why-choose-us-text {
-    width: 50%; /* Adjust text width */
+    width: 50%; 
 }
 
 .why-choose-us-text h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333; /* Adjust color as needed */
+    color: #333; 
 }
 
 .why-choose-us-text p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555; /* Adjust color as needed */
+    color: #555; 
 }
 
 .why-choose-us-text ul {
@@ -347,31 +346,31 @@ footer {
 .why-choose-us-text ul li {
     font-size: 16px;
     margin-bottom: 10px;
-    color: #555; /* Adjust color as needed */
+    color: #555; 
 }
 
 .why-choose-us-text ul li strong {
-    color: #000; /* Adjust color as needed */
+    color: #000; 
 }
 
 /* Responsive Design for Why Choose Us Section */
 @media screen and (max-width: 768px) {
     .why-choose-us-content {
-        flex-direction: column; /* Stack image and text vertically on mobile */
+        flex-direction: column; 
     }
 
     .why-choose-us-content img,
     .why-choose-us-text {
-        width: 100%; /* Full width on mobile */
+        width: 100%; 
     }
 
     .why-choose-us-text h2 {
-        font-size: 28px; /* Smaller font size for mobile */
+        font-size: 28px; 
     }
 
     .why-choose-us-text p,
     .why-choose-us-text ul li {
-        font-size: 16px; /* Smaller font size for mobile */
+        font-size: 16px; 
     }
 }
 
@@ -430,22 +429,22 @@ footer {
 }
 
 .exterior_cleaning {
-    background-image: url('images/home_exterior.jpg'); /* Add your image path here */
+    background-image: url('images/home_exterior.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust height as needed */
+    height: 300px; 
     display: flex;
     align-items: center;
-    justify-content: space-around; /* Add more space between text and form */
+    justify-content: space-around;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
 .exterior_cleaning h2{
-    font-size: 48px;  /* Larger size */
+    font-size: 48px;  
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Better contrast */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
     padding: 20px;
     border-radius: 5px;
 }
@@ -453,8 +452,8 @@ footer {
 /* Services Description Section */
 .services-description {
     max-width: 1000px;
-    margin: 60px auto;  /* Increased from 40px */
-    padding: 40px;      /* Increased from 20px */
+    margin: 60px auto;  
+    padding: 40px;      
     background-color: #efeded;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -465,7 +464,7 @@ footer {
     border-left-color: #333;
 }
 .services-description + .services-description {
-    margin-top: 80px;  /* Extra space between stacked sections */
+    margin-top: 80px;  
 }
 .services-description h2 {
     font-size: 28px;
@@ -596,22 +595,177 @@ footer {
     }
 }
 .house_washing {
-    background-image: url('images/house_wash.jpg'); /* Add your image path here */
+    background-image: url('images/5.png');
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust height as needed */
+    height: 400px; 
     display: flex;
     align-items: center;
-    justify-content: space-around; /* Add more space between text and form */
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
     position: relative;
 }
 
-.house_washing h2{
-    font-size: 48px;  /* Larger size */
+.house_washing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.house_washing h2 {
+    font-size: 48px;  
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Better contrast */
-    padding: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    padding: 25px 40px;
     border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.house_description {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.house_description h3 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.house_description h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background-color: rgb(109, 210, 244);
+}
+
+.house_description p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.materials-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.materials-list li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.materials-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cta-section {
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgb(109, 210, 244);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.cta-section h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: rgb(109, 210, 244);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .house_washing {
+        height: 300px;
+    }
+    
+    .house_washing h2 {
+        font-size: 42px;
+        padding: 20px;
+    }
+    
+    .house_description {
+        padding: 30px 20px;
+        margin: 40px auto;
+    }
+    
+    .house_description h3 {
+        font-size: 28px;
+    }
+    
+    .materials-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cta-section {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .house_washing h2 {
+        font-size: 32px;
+    }
+    
+    .house_description h3 {
+        font-size: 24px;
+    }
+    
+    .materials-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-button {
+        width: 100%;
+        padding: 12px;
+    }
 }
