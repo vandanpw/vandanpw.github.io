@@ -721,7 +721,18 @@ footer {
     background-color: transparent;
     color: white;
 }
+.surfaces-image {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px; /* Added for better mobile spacing */
+}
 
+.surfaces-image img {
+    max-width: 65%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee; /* Optional border */
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .house_washing {
@@ -749,6 +760,10 @@ footer {
     .cta-section {
         padding: 30px 20px;
     }
+    .surfaces-image {
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -767,5 +782,9 @@ footer {
     .cta-button {
         width: 100%;
         padding: 12px;
+    }
+
+    surfaces-image img {
+        border-radius: 5px;
     }
 }
