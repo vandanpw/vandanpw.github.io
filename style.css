@@ -724,16 +724,20 @@ footer {
 .surfaces-image {
     margin-top: 30px;
     text-align: center;
-    padding: 0 20px; /* Added for better mobile spacing */
+    padding: 0 20px; 
+    
 }
 
 .surfaces-image img {
     max-width: 65%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border: 1px solid #eee; /* Optional border */
+    border: 1px solid #eee; 
+    transition: transform 0.3s ease;
 }
-/* Mobile Responsiveness */
+.surfaces-image img:hover {
+    transform: translateY(-5px);
+}
 @media screen and (max-width: 768px) {
     .house_washing {
         height: 300px;
@@ -787,4 +791,266 @@ footer {
     surfaces-image img {
         border-radius: 5px;
     }
+}
+/*Gutter Cleaning Section*/
+.gutter_cleaning {
+    background-image: url('images/dirty-gutter.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gutter_cleaning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.gutter_cleaning h2 {
+    font-size: 48px;  
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    padding: 25px 40px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.gutter_description {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.gutter_description h3 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.gutter_description h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background-color: rgb(109, 210, 244);
+}
+.gutter_description h4 {
+    font-size: 22px;
+    position: relative;
+}
+.gutter_description p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.gutter-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.gutter-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gutter-image img:hover {
+    transform: translateY(-5px);
+}
+
+.warning-box {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.benefits-list, .features-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.benefits-list li, .features-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.service-area {
+    background-color: #e9f7fe;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.service-area h4 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+    .gutter_cleaning {
+        height: 300px;
+    }
+    
+    .gutter_cleaning h2 {
+        font-size: 42px;
+        padding: 20px;
+    }
+    .gutter_description {
+        padding: 30px 20px;
+        margin: 40px auto;
+    }
+    
+    .gutter_description h3 {
+        font-size: 28px;
+    }
+    
+    .gutter-image {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .gutter_cleaning h2 {
+        font-size: 32px;
+    }
+    .gutter_description h3 {
+        font-size: 24px;
+    }
+    
+    .gutter_description p {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+}
+
+.pressure_washing {
+    background-image: url('images/pressure_washer.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pressure_washing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.pressure_washing h2 {
+    font-size: 48px;  
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    padding: 25px 40px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .pressure_washing {
+        height: 300px;
+    }
+    
+    .pressure_washing h2 {
+        font-size: 42px;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .pressure_washing h2 {
+        font-size: 32px;
+    }
+    
+}
+
+.roof_washing {
+    background-image: url('images/roof_wash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.roof_washing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.roof_washing h2 {
+    font-size: 48px;  
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    padding: 25px 40px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .roof_washing {
+        height: 300px;
+    }
+    
+    .roof_washing h2 {
+        font-size: 42px;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .roof_washing h2 {
+        font-size: 32px;
+    }
+    
 }
