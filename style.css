@@ -892,13 +892,25 @@ footer {
 
 .benefits-list, .features-list {
     margin: 20px 0;
+    list-style-type: none;
     padding-left: 20px;
 }
 
 .benefits-list li, .features-list li {
+    position: relative;
+    padding-left: 25px;
     margin-bottom: 10px;
     line-height: 1.6;
     color: #555;
+}
+.benefits-list li::before,
+.features-list li::before {
+    content: "•"; 
+    color: rgb(109, 210, 244);
+    font-size: 24px; 
+    position: absolute;
+    left: 0;
+    top: -2px; 
 }
 
 .service-area {
@@ -913,42 +925,106 @@ footer {
     color: #1a73e8;
     margin-bottom: 10px;
 }
+/* Mobile Responsiveness - Improved Version */
 @media screen and (max-width: 768px) {
     .gutter_cleaning {
-        height: 300px;
+        height: 250px; 
     }
     
     .gutter_cleaning h2 {
-        font-size: 42px;
-        padding: 20px;
+        font-size: 36px; 
+        padding: 15px 25px;
+        width: 90%;
     }
+    
     .gutter_description {
-        padding: 30px 20px;
-        margin: 40px auto;
+        padding: 25px 15px;
+        margin: 30px auto;
+        border-radius: 8px;
     }
     
     .gutter_description h3 {
-        font-size: 28px;
+        font-size: 26px; 
+        margin-bottom: 20px;
+    }
+    
+    .gutter_description h3::after {
+        width: 80px; 
+        height: 3px;
+    }
+    
+    .gutter_description h4 {
+        font-size: 20px; 
+        margin-top: 25px; 
     }
     
     .gutter-image {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        margin: 30px 0; 
     }
     
+    .warning-box {
+        margin: 20px 0;
+        padding: 12px;
+    }
+    
+    .benefits-list, 
+    .features-list {
+        padding-left: 15px;
+        margin: 15px 0;
+    }
+    
+    .benefits-list li, 
+    .features-list li {
+        margin-bottom: 8px; 
+        padding-left: 22px;
+    }
+
+    .benefits-list li::before,
+    .features-list li::before {
+        font-size: 20px;
+        top: -1px; 
+    }
+    
+    .service-area {
+        padding: 15px;
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .gutter_cleaning h2 {
-        font-size: 32px;
+    .gutter_cleaning {
+        height: 200px; 
     }
+    
+    .gutter_cleaning h2 {
+        font-size: 28px;
+        padding: 12px 20px;
+    }
+    
     .gutter_description h3 {
-        font-size: 24px;
+        font-size: 22px; 
     }
     
     .gutter_description p {
         font-size: 16px;
-        text-align: left;
+        line-height: 1.6;
+        margin-bottom: 15px; 
+    }
+    
+    .cta-section {
+        padding: 25px 15px;
+        margin: 30px auto;
+    }
+    
+    .cta-section h3 {
+        font-size: 22px;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 18px; 
     }
     
 }
