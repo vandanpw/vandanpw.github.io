@@ -81,3 +81,39 @@ function sendeMail(){
             button.disabled = false;
         });
 }
+
+// Gallery Lightbox Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    `;
+    document.body.appendChild(modal);
+    
+    const modalImg = document.getElementById('modal-image');
+    const closeBtn = document.querySelector('.close');
+    
+    // Open modal when image is clicked
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        });
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Close when clicking outside image
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
