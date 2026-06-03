@@ -23,7 +23,7 @@ header {
 }
 
 .logo img {
-    height: 100px;
+    height: 115px;
     display: block;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover {
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 140px;
+    top: 155px;
     right: 10px;
     width: 220px;
     background-color: #252525;
